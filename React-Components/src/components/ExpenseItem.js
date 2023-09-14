@@ -1,13 +1,13 @@
-import Calender from './Calender'
+import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
-function ExpenseItem({date,title, price}){
+function ExpenseItem({date,title, amount}){
    
     return (
         <div className="expense-item">
-            <Calender date={date}/>
+            <ExpenseDate date={date}/>
             <div className="expense-item__description ">
                 <h2 className='.expense-item h2'>{title}</h2>
-                <div className="expense-item__price ">{price}</div>
+                <div className="expense-item__price ">${amount}</div>
             </div>
         </div>
     )
