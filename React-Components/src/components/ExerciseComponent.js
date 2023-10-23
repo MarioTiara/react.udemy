@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function ExerciseComponent ()
+const ExerciseComponent= ()=>
 {
     return (<p>First Exercise - done!</p>)
 }
+
+export default ExerciseComponent

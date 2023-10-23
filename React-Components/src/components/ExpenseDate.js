@@ -1,5 +1,6 @@
 import './ExpenseDate.css'
-export default function Calender (props){
+
+const Calender = (props)=>{
     const {month, day, year}=dateHelper(props.date)
     return (
         <div className="expense-date">
@@ -18,3 +19,5 @@ function dateHelper(date)
 
     return {month:month, day:day, year:year}
 }
+
+export default Calender
