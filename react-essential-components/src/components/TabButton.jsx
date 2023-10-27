@@ -1,11 +1,11 @@
-const TabButton =(props)=> {
+const TabButton =({children, onSelect})=> {
     function handleClick(){
         console.log("hello mario")
     }
     
     
     return <li>
-        <button onClick={handleClick}>{props.children}</button>
+        <button onClick={onSelect}>{children}</button>
     </li>
 }
 
