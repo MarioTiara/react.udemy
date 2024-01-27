@@ -14,6 +14,7 @@ export default function Player() {
 
   function handleClick(){
     setEnterPlayerName(playerName.current.value)
+    playerName.current.value='';
   }
 
 
